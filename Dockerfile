@@ -4,7 +4,7 @@
 #
 FROM gradle:7.4-jdk11 AS build
 COPY . .
-RUN ./gradle clean build
+RUN ./gradlew clean build
 
 #
 # Package stage
